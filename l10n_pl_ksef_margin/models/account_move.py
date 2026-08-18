@@ -183,7 +183,7 @@ class AccountMove(models.Model):
             raise
         except _KsefApiError as e:
             body = getattr(e, 'response_body', None)
-            _logger.error('KSeF send error: %s | body: %s', e, body, exc_info=True)
+            _logger.error('KSeF send error: %s | body: %s', e, body[:300] if body else body, exc_info=True)
             raise UserError(_('Błąd KSeF: %s') % (str(body) if body else str(e))) from e
         except Exception as e:
             _logger.error('KSeF send error: %s', e, exc_info=True)
@@ -277,7 +277,7 @@ class AccountMove(models.Model):
         except UserError:
             raise
         except Exception as e:
-            _logger.error('KSeF UPO download error dla %s: %s', self.name, e, exc_info=True)
+            _logger.error('KSeF UPO download error dla %s: %s', self.name, str(e)[:300], exc_info=True)
             raise UserError(_('Błąd pobierania UPO: %s') % str(e)) from e
 
         return {

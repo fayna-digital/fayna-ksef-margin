@@ -83,6 +83,8 @@ class KsefXmlBuilder:
     # Public
     # ─────────────────────────────────────────────
 
+    MAX_XML_SIZE = 20 * 1024 * 1024  # 20 MB — ліміт розміру сесії KSeF API
+
     def build(self) -> bytes:
         """Генерує FA(3) XML і повертає як bytes (UTF-8).
 
@@ -94,7 +96,13 @@ class KsefXmlBuilder:
         """
         self._validate()
         xml = self._render_xml()
-        return xml.encode('utf-8')
+        xml_bytes = xml.encode('utf-8')
+        if len(xml_bytes) > self.MAX_XML_SIZE:
+            raise UserError(_("Przekroczono limit rozmiaru XML: %(size)s MB > %(limit)s MB") % {
+                'size': round(len(xml_bytes) / (1024 * 1024), 1),
+                'limit': round(self.MAX_XML_SIZE / (1024 * 1024), 1),
+            })
+        return xml_bytes
 
     # ─────────────────────────────────────────────
     # Validation
