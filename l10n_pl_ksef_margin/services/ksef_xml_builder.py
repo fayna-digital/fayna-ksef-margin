@@ -98,10 +98,13 @@ class KsefXmlBuilder:
         xml = self._render_xml()
         xml_bytes = xml.encode('utf-8')
         if len(xml_bytes) > self.MAX_XML_SIZE:
-            raise UserError(_("Przekroczono limit rozmiaru XML: %(size)s MB > %(limit)s MB") % {
-                'size': round(len(xml_bytes) / (1024 * 1024), 1),
-                'limit': round(self.MAX_XML_SIZE / (1024 * 1024), 1),
-            })
+            raise UserError(
+                _('Przekroczono limit rozmiaru XML: %(size)s MB > %(limit)s MB')
+                % {
+                    'size': round(len(xml_bytes) / (1024 * 1024), 1),
+                    'limit': round(self.MAX_XML_SIZE / (1024 * 1024), 1),
+                }
+            )
         return xml_bytes
 
     # ─────────────────────────────────────────────
