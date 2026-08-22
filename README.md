@@ -115,7 +115,7 @@ status = 'waiting'
 pip install ksef-client
 
 cd /path/to/odoo/extra-addons
-git clone https://github.com/fayna-digital/l10n-pl-ksef-margin.git
+git clone https://github.com/fayna-digital/fayna-ksef-margin.git
 
 odoo -c /etc/odoo/odoo.conf -d your_db -i l10n_pl_ksef_margin --stop-after-init
 ```
