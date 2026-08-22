@@ -1,4 +1,4 @@
-# l10n_pl_ksef_margin — Odoo 17 × KSeF 2.0 (FA(3))
+# KSeF Margin — Odoo 17 × KSeF 2.0 (FA(3))
 
 ![Odoo Version](https://img.shields.io/badge/Odoo-17.0%20Community-purple)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
