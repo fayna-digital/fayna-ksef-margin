@@ -16,14 +16,34 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14) ? 2 : 3);\n"
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Brak faktur do wysłania."
-msgstr "Немає фактур для відправки."
+#. odoo-python
+msgid "Błąd autoryzacji KSeF: %s"
+msgstr "Помилка авторизації KSeF: %s"
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Błąd ponownej wysyłki: %s"
-msgstr "Помилка повторної відправки: %s"
+#. odoo-python
+msgid "Błąd importu KSeF auth: %s"
+msgstr "Помилка імпорту KSeF auth: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Błąd KSeF: %s"
+msgstr "Помилка KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Błąd pobierania UPO: %s"
+msgstr "Помилка завантаження UPO: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Błąd pobierania XML z KSeF: %s"
+msgstr "Помилка завантаження XML з KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Błąd synchronizacji KSeF: %s"
+msgstr "Помилка синхронізації KSeF: %s"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-javascript
@@ -32,13 +52,78 @@ msgstr "Помилка синхронізації: %s"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-javascript
+msgid "Błąd ponownej wysyłki: %s"
+msgstr "Помилка повторної відправки: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Brak Nr KSeF — nie można pobrać UPO."
+msgstr "Немає Nr KSeF — неможливо завантажити UPO."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-javascript
+msgid "Brak faktur do wysłania."
+msgstr "Немає фактур для відправки."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-javascript
 msgid "Dashboard odświeżony."
 msgstr "Дашборд оновлено."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Faktura wysłana do KSeF. Nr referencyjny: %s"
+msgstr "Фактуру надіслано до KSeF. Реєстраційний номер: %s"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-javascript
 msgid "Faktura wysłana ponownie do KSeF."
 msgstr "Фактуру повторно надіслано до KSeF."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF (auto): faktura wysłana. Ref: %s"
+msgstr "KSeF (auto): фактуру надіслано. Ref: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF (bulk): faktura wysłana. Ref: %s"
+msgstr "KSeF (bulk): фактуру надіслано. Ref: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF ID: %s"
+msgstr "KSeF ID: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF zwrócił puste UPO dla Nr KSeF: %s"
+msgstr "KSeF повернув порожнє UPO для Nr KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF zwrócił pusty XML dla Nr KSeF: %s"
+msgstr "KSeF повернув порожній XML для Nr KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF: Faktura zaakceptowana. Nr KSeF: %s"
+msgstr "KSeF: Фактуру прийнято. Nr KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF: Nie można pobrać certyfikatu KsefTokenEncryption."
+msgstr "KSeF: Неможливо отримати сертифікат KsefTokenEncryption."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF: Nie można pobrać certyfikatu SymmetricKeyEncryption."
+msgstr "KSeF: Неможливо отримати сертифікат SymmetricKeyEncryption."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "KSeF: ponowna próba wysyłki (#%s)."
+msgstr "KSeF: повторна спроба відправки (#%s)."
 
 #. module: l10n_pl_ksef_margin
 #. odoo-javascript
@@ -51,26 +136,51 @@ msgid "No description provided by KSeF."
 msgstr "KSeF не повідомив деталей відхилення."
 
 #. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Pełny XML faktury %s został pobrany i sparsowany."
+msgstr "Повний XML фактури %s завантажено та розібрано."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Pobrano %s nowych faktur z KSeF."
+msgstr "Отримано %s нових фактур з KSeF."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Przekroczono limit rozmiaru XML: %(size)s MB > %(limit)s MB"
+msgstr "Перевищено ліміт розміру XML: %(size)s MB > %(limit)s MB"
+
+#. module: l10n_pl_ksef_margin
 #. odoo-javascript
 msgid "Synchronizacja z KSeF zakończona."
 msgstr "Синхронізацію з KSeF завершено."
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Відхилено"
-msgstr ""
+#. odoo-python
+msgid "Synchronizacja zakończona"
+msgstr "Синхронізацію завершено"
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Очікує"
-msgstr ""
+#. odoo-python
+msgid "UPO dla faktury %s zostało zapisane jako załącznik."
+msgstr "UPO для фактури %s збережено як вкладення."
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Прийнято"
-msgstr ""
+#. odoo-python
+msgid "UPO jest dostępne tylko dla zaakceptowanych faktur KSeF."
+msgstr "UPO доступне лише для прийнятих фактур KSeF."
 
 #. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Чернетка"
-msgstr ""
+#. odoo-python
+msgid "UPO pobrane z KSeF. Nr KSeF: %s"
+msgstr "UPO завантажено з KSeF. Nr KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "UPO pobrane"
+msgstr "UPO завантажено"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "XML pobrany"
+msgstr "XML завантажено"

@@ -28,7 +28,8 @@ to REPO_STANDARD, fresh git history without AI signatures.
 - [x] README (PL) — product overview.
 - [x] docs/TZ.md (EN) — specification per REPO_STANDARD.
 - [x] docs/PLAN.md (EN) — this plan.
-- [ ] i18n: full Polish translation of module strings (in progress).
+- [x] i18n: module strings are Polish-first (source); full `pl_PL` + `uk_UA`
+      translations shipped in `i18n/`.
 
 ## Checkpoints
 

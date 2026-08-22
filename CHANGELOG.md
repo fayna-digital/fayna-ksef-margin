@@ -4,6 +4,24 @@
 
 ---
 
+## [i18n] — 2026-08-23 (без зміни поведінки, версія модуля лишається 17.0.2.2.6)
+
+### Changed
+
+- **Завершено i18n-фаз** (Phase 3): UI модуля приведено до польської як
+  source-мови — хардкод українських рядків у `views/ksef_dashboard_views.xml`
+  (pivot/graph/tree/search, menu, actions) та JS-статусів у
+  `static/src/components/ksef_dashboard/ksef_dashboard.js` замінено на
+  польські еквіваленти (`Szkic`, `Oczekuje`, `Zaakceptowano`, `Odrzucono`).
+- `i18n/pl_PL.po` — повний (35 msgid, msgstr=msgid, оскільки модуль вже
+  польською як локалізація).
+- `i18n/uk_UA.po` — повний польсько→український переклад (35 msgid).
+
+> ⚠️ Код KSeF-відправки (`services/`, `models/`) НЕ змінювався — поведінка
+> незмінна. Зміни стосуються лише перекладних UI-рядків.
+
+---
+
 ## [portfolio] — 2026-07-24 (без зміни поведінки, версія модуля лишається 17.0.2.2.6)
 
 ### Changed

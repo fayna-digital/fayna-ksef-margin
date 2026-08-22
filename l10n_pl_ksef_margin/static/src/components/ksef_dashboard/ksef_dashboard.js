@@ -461,10 +461,10 @@ export class KsefDashboard extends Component {
 
     statusLabel(status) {
         return ({
-            draft: _t("Чернетка"),
-            waiting: _t("Очікує"),
-            accepted: _t("Прийнято"),
-            rejected: _t("Відхилено"),
+            draft: _t("Szkic"),
+            waiting: _t("Oczekuje"),
+            accepted: _t("Zaakceptowano"),
+            rejected: _t("Odrzucono"),
         })[status] || status;
     }
 
