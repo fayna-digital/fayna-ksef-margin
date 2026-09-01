@@ -17,6 +17,21 @@ msgstr ""
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
+msgid "Brak Nr KSeF — nie można pobrać UPO."
+msgstr "Немає Nr KSeF — неможливо завантажити UPO."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-javascript
+msgid "Brak faktur do wysłania."
+msgstr "Немає фактур для відправки."
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
+msgid "Błąd KSeF: %s"
+msgstr "Помилка KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-python
 msgid "Błąd autoryzacji KSeF: %s"
 msgstr "Помилка авторизації KSeF: %s"
 
@@ -24,11 +39,6 @@ msgstr "Помилка авторизації KSeF: %s"
 #. odoo-python
 msgid "Błąd importu KSeF auth: %s"
 msgstr "Помилка імпорту KSeF auth: %s"
-
-#. module: l10n_pl_ksef_margin
-#. odoo-python
-msgid "Błąd KSeF: %s"
-msgstr "Помилка KSeF: %s"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
@@ -41,6 +51,11 @@ msgid "Błąd pobierania XML z KSeF: %s"
 msgstr "Помилка завантаження XML з KSeF: %s"
 
 #. module: l10n_pl_ksef_margin
+#. odoo-javascript
+msgid "Błąd ponownej wysyłki: %s"
+msgstr "Помилка повторної відправки: %s"
+
+#. module: l10n_pl_ksef_margin
 #. odoo-python
 msgid "Błąd synchronizacji KSeF: %s"
 msgstr "Помилка синхронізації KSeF: %s"
@@ -49,21 +64,6 @@ msgstr "Помилка синхронізації KSeF: %s"
 #. odoo-javascript
 msgid "Błąd synchronizacji: %s"
 msgstr "Помилка синхронізації: %s"
-
-#. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Błąd ponownej wysyłki: %s"
-msgstr "Помилка повторної відправки: %s"
-
-#. module: l10n_pl_ksef_margin
-#. odoo-python
-msgid "Brak Nr KSeF — nie można pobrać UPO."
-msgstr "Немає Nr KSeF — неможливо завантажити UPO."
-
-#. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "Brak faktur do wysłania."
-msgstr "Немає фактур для відправки."
 
 #. module: l10n_pl_ksef_margin
 #. odoo-javascript
@@ -93,7 +93,7 @@ msgstr "KSeF (bulk): фактуру надіслано. Ref: %s"
 #. module: l10n_pl_ksef_margin
 #. odoo-python
 msgid "KSeF ID: %s"
-msgstr "KSeF ID: %s"
+msgstr ""
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
@@ -104,6 +104,11 @@ msgstr "KSeF повернув порожнє UPO для Nr KSeF: %s"
 #. odoo-python
 msgid "KSeF zwrócił pusty XML dla Nr KSeF: %s"
 msgstr "KSeF повернув порожній XML для Nr KSeF: %s"
+
+#. module: l10n_pl_ksef_margin
+#. odoo-javascript
+msgid "KSeF — Wyślij faktury"
+msgstr "KSeF — Надіслати фактури"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
@@ -124,11 +129,6 @@ msgstr "KSeF: Неможливо отримати сертифікат Symmetric
 #. odoo-python
 msgid "KSeF: ponowna próba wysyłki (#%s)."
 msgstr "KSeF: повторна спроба відправки (#%s)."
-
-#. module: l10n_pl_ksef_margin
-#. odoo-javascript
-msgid "KSeF — Wyślij faktury"
-msgstr "KSeF — Надіслати фактури"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
@@ -172,13 +172,13 @@ msgstr "UPO доступне лише для прийнятих фактур KSe
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
-msgid "UPO pobrane z KSeF. Nr KSeF: %s"
-msgstr "UPO завантажено з KSeF. Nr KSeF: %s"
+msgid "UPO pobrane"
+msgstr "UPO завантажено"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python
-msgid "UPO pobrane"
-msgstr "UPO завантажено"
+msgid "UPO pobrane z KSeF. Nr KSeF: %s"
+msgstr "UPO завантажено з KSeF. Nr KSeF: %s"
 
 #. module: l10n_pl_ksef_margin
 #. odoo-python

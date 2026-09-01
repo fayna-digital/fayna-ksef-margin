@@ -60,8 +60,8 @@ repos:
         args: [--fix=lf]
 
   # Conventional Commits (commit-msg): enforce <type>(<scope>): <summary>
-  - repo: https://github.com/conventional-changelog/commitlint
-    rev: v19.3.0
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.26.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
